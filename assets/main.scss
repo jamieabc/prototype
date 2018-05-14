@@ -35,11 +35,16 @@
       list-style: none;
       margin: 0;
       padding: 0;
+
+      li {
+        margin-right: 43px;
+
+        a {
+          text-decoration: none;
+        }
+      }
     }
 
-    li {
-      margin-right: 43px;
-    }
 
     .header__list--white {
       color: white;
@@ -49,14 +54,35 @@
   .header__list--right {
     width: 50%;
     display: flex;
-    justify-content:
+    justify-content: flex-end;
 
     .header__issue {
 
     }
 
-    .header__email {
-
+    .header__account {
+      display: inline-flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: default;
+      height: 100%;
+      padding-right: 10px;
     }
+
+    .header__account-open {
+      background: #0060f2;
+    }
+
+    .header__triangle {
+      display: block;
+      padding: 0 10px;
+    }
+
+    .header__email {
+      padding: 0 5px 0 15px;
+    }
+
   }
 }
