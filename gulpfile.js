@@ -14,7 +14,8 @@ const paths = {
   src: {
     sass: ["./assets/**/*.scss"],
     images: "./assets/img/**/*",
-    html: "./"
+    index: "./",
+    html: "./webapp/**/*.html"
   }
 };
 
@@ -35,7 +36,7 @@ gulp.task("img:copy", () => {
 
 gulp.task("server", () => {
   browserSync.init({
-    server: { baseDir: [paths.src.html, paths.dest.default] },
+    server: { baseDir: [paths.src.index, paths.src.html, paths.dest.default] },
     browser: "google chrome"
   });
 });
@@ -43,6 +44,7 @@ gulp.task("server", () => {
 gulp.task("watch", () => {
   gulp.watch(paths.src.sass, gulp.series("sass"));
   gulp.watch(paths.images, gulp.series("img:copy"));
+  gulp.watch([paths.src.index, paths.src.html]).on("change", browserSync.reload);
 });
 
 gulp.task("default", gulp.parallel("sass", "img:copy", "watch", "server"));
