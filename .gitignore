@@ -200,6 +200,6 @@ vim/undodir/*
 # javascript
 */node_modules/*
 node_modules/*
-build/*
+build/
 
 \#*#
