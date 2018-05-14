@@ -1,0 +1,205 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git-ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.S
+*.ko
+*.so
+*.so.dbg
+*.mod.c
+*.i
+*.lst
+*.symtypes
+*.order
+*.elf
+*.bin
+*.gz
+*.gzip
+*.swp
+*.exe
+*.swp
+*.log
+*.pdf
+*.pg
+patches
+patches-*
+.gitignore
+
+# CL android
+kernel/rootfs
+
+# output directory
+out*
+
+# repo directory
+.repo
+
+# Samsung
+*.builtin
+
+#
+# Top-level generic files
+#
+tags
+TAGS
+filenametags
+vmlinux
+Image
+uImage
+zImage
+System.map
+Module.markers
+Module.symvers
+!.gitignore
+!.mailmap
+
+#
+# Generated include files
+#
+include/asm
+include/asm-*/asm-offsets.h
+include/config
+include/linux/autoconf.h
+include/linux/compile.h
+include/linux/version.h
+include/linux/utsrelease.h
+include/linux/bounds.h
+include/generated
+
+# quilt's files
+patches
+series
+
+# gnu global files
+GPATH
+GRTAGS
+GTAGS
+gtags.files
+
+# build script
+build.sh
+
+# cscope files
+cscope.*
+ncscope.*
+
+# for QEMU
+config-devices.*
+config-all-devices.*
+config-host.*
+config-target.*
+trace.h
+trace.c
+trace-dtrace.h
+trace-dtrace.dtrace
+*-timestamp
+*-softmmu
+*-darwin-user
+*-linux-user
+*-bsd-user
+libdis*
+libhw32
+libhw64
+libuser
+linux-headers/asm
+qapi-generated
+qapi-types.[ch]
+qapi-visit.[ch]
+qmp-commands.h
+qmp-marshal.c
+qemu-doc.html
+qemu-tech.html
+qemu-doc.info
+qemu-tech.info
+qemu.1
+qemu.pod
+qemu-img.1
+qemu-img.pod
+qemu-img
+qemu-nbd
+qemu-nbd.8
+qemu-nbd.pod
+qemu-options.def
+qemu-options.texi
+qemu-img-cmds.texi
+qemu-img-cmds.h
+qemu-io
+qemu-ga
+qemu-bridge-helper
+qemu-monitor.texi
+QMP/qmp-commands.txt
+test-coroutine
+test-qmp-input-visitor
+test-qmp-output-visitor
+test-string-input-visitor
+test-string-output-visitor
+fsdev/virtfs-proxy-helper.1
+fsdev/virtfs-proxy-helper.pod
+.gdbinit
+*.a
+*.aux
+*.cp
+*.dvi
+*.exe
+*.fn
+*.ky
+*.log
+*.pdf
+*.cps
+*.fns
+*.kys
+*.pg
+*.pyc
+*.toc
+*.tp
+*.vr
+*.d
+*.swp
+*.orig
+.pc
+patches
+pc-bios/bios-pq/status
+pc-bios/vgabios-pq/status
+.stgit-*
+# end QEMU
+
+# binary file
+*.img
+*.bin
+*.raw
+
+# emacs
+ac-comphist.dat
+places
+ido.last
+archive-contents
+*.elc
+.emacs.d
+.emacs.d.mac
+
+# mac
+.DS_Store
+*~
+
+# vim
+vim/view/*
+vim/undodir/*
+
+# javascript
+*/node_modules/*
+node_modules/*
+build/*
+
+\#*#

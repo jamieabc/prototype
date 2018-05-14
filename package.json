@@ -1,0 +1,29 @@
+{
+  "name": "prototype",
+  "version": "1.0.0",
+  "description": "For web prototyping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jamieabc/prototype.git"
+  },
+  "author": "Aaron Chang <xesuschang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamieabc/prototype/issues"
+  },
+  "homepage": "https://github.com/jamieabc/prototype#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "changed": "0.0.2",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-grep": "^0.2.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
