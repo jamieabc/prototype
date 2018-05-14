@@ -7,32 +7,56 @@
   top: 0;
   width: 100%;
   z-index: 1;
-}
 
-.header__toolbar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .header__toolbar {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-.header__toolbar__logo {
-  display: inline-flex;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
+  .header__logo {
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
 
-img {
-  width: 22px;
-  display: block;
-  margin-bottom: 1px;
-}
+    img {
+      width: 22px;
+      display: block;
+      margin-bottom: 1px;
+    }
+  }
 
-.header__toolbar-list {
-  display: flex;
-  list-style-type: none;
-}
+  .header__list--left {
+    width: calc(50% - 45px);
 
-.header__toolbar-list--white {
-  color: white;
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-right: 43px;
+    }
+
+    .header__list--white {
+      color: white;
+    }
+  }
+
+  .header__list--right {
+    width: 50%;
+    display: flex;
+    justify-content:
+
+    .header__issue {
+
+    }
+
+    .header__email {
+
+    }
+  }
 }
