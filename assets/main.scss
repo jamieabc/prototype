@@ -1,3 +1,5 @@
+$header--height: 48px;
+
 body {
   padding: 0;
   color: #000;
@@ -9,7 +11,7 @@ body {
 
 .header {
   background: black;
-  height: 48px;
+  height: $header--height;
   left: 0;
   position: fixed;
   right: 0;
@@ -25,7 +27,7 @@ body {
 
   .header__logo {
     display: inline-flex;
-    height: 48px;
+    height: $header--height;
     justify-content: center;
     width: 48px;
 
@@ -58,13 +60,17 @@ body {
     .header__list--white {
       color: white;
     }
+
+    .header__list--gray {
+      color: #999;
+    }
   }
 
   .header__list--right {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    height: 48px;
+    height: $header--height;
 
     .header__account {
       display: inline-flex;
@@ -113,6 +119,78 @@ body {
         color: white;
       }
     }
+  }
+}
 
+.table {
+  padding-left: 47px;
+  padding-right: 30px;
+  padding-top: $header--height;
+  width: 100%;
+  max-width: 1200px;
+  font-family: AndaleMono, sans-serif;
+  font-size: 13px;
+
+  .table__title {
+    padding-bottom: 20px;
+    padding-top:40px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .table__body {
+    width: 100%;
+  }
+
+  .table__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowarp;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .table__row--hover:hover {
+    background: rgb(241, 249, 255);
+  }
+
+  .table__cell {
+    display: inline-flex;
+    padding-bottom: 3px;
+    vertical-algin: middle;
+  }
+
+  .table--bold {
+    font-weight: bold;
+  }
+
+  .table__header {
+    background: #fafafa;
+  }
+
+  .table__timestamp {
+    width: 17%;
+  }
+
+  .table__property {
+    width: 41%;
+  }
+
+  .table__issuer {
+    width: 21%;
+  }
+
+  .table__details {
+    width: 21%;
+    text-transform: uppercase;
+  }
+
+  .table__download {
+    color: #0060f2;
+  }
+
+  .table__download--after::after {
+    content: '\BB';
+    margin-left: 3.5px;
   }
 }
