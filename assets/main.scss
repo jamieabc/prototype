@@ -2,15 +2,15 @@
 
 body {
   padding: 0;
-  color: #000;
-  background: #fff;
+  color: $black;
+  background: $white;
   font-weight: 300;
   font-size: 14px;
   font-family: Avenir, 'Noto Sans', sans-serif;
 }
 
 .header {
-  background: #000;
+  background: $black;
   height: $header--height;
   left: 0;
   position: fixed;
@@ -47,22 +47,23 @@ body {
       list-style: none;
       margin: 0;
       padding: 0;
+    }
 
-      li {
-        margin-right: 43px;
+    li {
+      margin-right: 43px;
 
-        a {
-          text-decoration: none;
-        }
-      }
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .header__list--white {
-      color: #000;
+      color: $black;
     }
 
     .header__list--gray {
-      color: #999;
+      color: $light-gray;
     }
   }
 
@@ -77,14 +78,14 @@ body {
       align-items: center;
       font-size: 16px;
       font-weight: bold;
-      color: #000;
+      color: $black;
       cursor: default;
       height: 100%;
       padding-right: 10px;
     }
 
     .header__account-open {
-      background: #0060f2;
+      background: $blue;
     }
 
     .header__triangle {
@@ -99,26 +100,27 @@ body {
     .header__issue-wrapper {
       display: flex;
       align-items: center;
-      background: #0060f2;
+      background: $blue;
       text-decoration: none;
       padding: 2.5px 10px 2.5px 5px;
       margin: 10px 15px;
       border-radius: 2px;
-
-      .header__issue {
-        font-size: 16px;
-        font-weight: 700;
-        color: #fff;
-      }
-
-      .header__plus {
-        margin: 10px;
-      }
-
-      .header__issue-wrapper--white {
-        color: #fff;
-      }
     }
+
+
+    .header__issue {
+      font-size: 16px;
+      font-weight: 700;
+      color: $white;
+    }
+
+    .header__plus {
+      margin: 10px;
+    }
+
+    .header__issue-wrapper--white {
+      color: $white;
+      }
   }
 }
 
@@ -133,7 +135,7 @@ body {
 
   .table__title {
     padding-bottom: 20px;
-    padding-top:40px;
+    padding-top: 40px;
     font-size: 16px;
     font-weight: bold;
   }
@@ -151,13 +153,13 @@ body {
   }
 
   .table__row--hover:hover {
-    background: rgb(241, 249, 255);
+    background: $table-hover-color;
   }
 
   .table__cell {
     display: inline-flex;
     padding-bottom: 3px;
-    vertical-algin: middle;
+    vertical-align: middle;
   }
 
   .table--bold {
@@ -165,7 +167,7 @@ body {
   }
 
   .table__header {
-    background: #fafafa;
+    background: $table-header-color;
   }
 
   .table__timestamp {
@@ -186,7 +188,7 @@ body {
   }
 
   .table__download {
-    color: #0060f2;
+    color: $blue;
   }
 
   .table__download--after::after {
