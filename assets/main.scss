@@ -1,5 +1,11 @@
 @import 'variables';
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   color: $black;
@@ -7,11 +13,13 @@ body {
   font-weight: 300;
   font-size: 14px;
   font-family: Avenir, 'Noto Sans', sans-serif;
+  margin: 0;
+  height: 100%;
 }
 
 .header {
   background: $black;
-  height: $header--height;
+  height: $header-height;
   left: 0;
   position: fixed;
   right: 0;
@@ -27,7 +35,7 @@ body {
 
   .header__logo {
     display: inline-flex;
-    height: $header--height;
+    height: $header-height;
     justify-content: center;
     width: 48px;
 
@@ -71,7 +79,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    height: $header--height;
+    height: $header-height;
 
     .header__account {
       display: inline-flex;
@@ -127,19 +135,21 @@ body {
 }
 
 .table {
-  padding-left: 47px;
-  padding-right: 30px;
-  padding-top: $header--height;
-  width: 100%;
-  max-width: 1200px;
-  font-family: AndaleMono, sans-serif;
+  padding-left: $table-padding-left;
+  padding-right: $table-padding-right;
+  padding-top: $header-height;
+  max-width: $table-max-width;
   font-size: 13px;
+  font-family: AndaleMono, sans-serif;
 
   .table__title {
     padding-bottom: 20px;
     padding-top: 40px;
+    font-family: Avenir, Noto Sans, sans-serif;
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
+    line-height: 30px;
   }
 
   .table__body {
@@ -151,7 +161,6 @@ body {
     flex-direction: row;
     flex-wrap: nowarp;
     width: 100%;
-    margin-bottom: 10px;
   }
 
   .table__row--hover:hover {
@@ -170,6 +179,7 @@ body {
 
   .table__header {
     background: $table-header-color;
+    margin-bottom: $table-header-margin-bottom;
   }
 
   .table__timestamp {
