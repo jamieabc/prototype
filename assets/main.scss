@@ -149,6 +149,11 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
+  }
+
+  .table__header {
+    background: $table-header-color;
+    margin-bottom: $table-header-margin-bottom;
     line-height: 30px;
   }
 
@@ -169,33 +174,41 @@ body {
 
   .table__cell {
     display: inline-flex;
+    padding-right: 30px;
     padding-bottom: 3px;
     vertical-align: middle;
   }
 
-  .table--bold {
+  .table__cell--padding {
+    padding-top: $table-cell-padding-top;
+  }
+
+  .table__font--bold {
     font-weight: bold;
   }
 
-  .table__header {
-    background: $table-header-color;
-    margin-bottom: $table-header-margin-bottom;
+  .table__timestamp {
+    width: 16.66667%;
   }
 
-  .table__timestamp {
-    width: 17%;
+  .table__timestamp--padding {
+    padding-top: 6px;
   }
 
   .table__property {
-    width: 41%;
+    width: 41.66667%;
+  }
+
+  .table__cell.table__property {
+    padding-top: 3px;
   }
 
   .table__issuer {
-    width: 21%;
+    width: 20.83333%;
   }
 
   .table__details {
-    width: 21%;
+    width: 20.83333%;
     text-transform: uppercase;
   }
 
